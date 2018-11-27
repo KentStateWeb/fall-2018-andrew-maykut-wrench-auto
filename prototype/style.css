@@ -425,7 +425,7 @@ p{
   width:65%;
   top:33%;
   left:35%;
-  transform: scalex(-1);
+  //transform: scalex(-1);
 }
 @media screen and (min-width:700px){
   .offers_text{
