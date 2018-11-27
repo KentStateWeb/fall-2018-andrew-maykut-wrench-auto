@@ -34,11 +34,17 @@ h4{
   font-weight: 700;
   margin-bottom: -0.5em;
 }
+h5{
+  font-family: ubuntu, san-serif;
+  font-weight: 400;
+}
 p{
   font-family: ubuntu, sans-serif;
   font-weight: 400;
   line-height: 1.25em;
 }
+
+/* LAYOUT */
 
 #header {
   position:relative;
@@ -51,12 +57,12 @@ p{
   background-color: #E6E7E8;
 }
 #header-nav {
-  padding:1em;
-  background-color: #A9A9A9;
+  //padding:1em;
+  background-color: #E6E7E8;
 }
 #header-nav-toggle {
   color:#942A1F;
-  font-size:2em;
+  font-size:2.25em;
   position:absolute;
   top:.5em;
   right:.5em;
@@ -64,61 +70,125 @@ p{
   cursor:pointer;
 }
 
+
+/***********/
+/* MODULES */
+/***********/
+
 /* MAIN */
-#maincontent {
-  //width:90%;
+#mainB {
+  width:90%;
   max-width:1000px;
   margin: 0 auto;
-  padding: 0em 1em;
 }
 
 /* Logo */
 .logo {
   width: 120px;
-  margin-left: 0.75em;
+  //margin-left: 0.75em;
 }
 
 /* Nav */
 .nav {
+  display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	grid-column-gap: 1em;
+	list-style-type: none;
+  margin-top: 0em;
+  margin-left: -2.5em;
   font-family: eurostile, sans-serif;
   font-weight: 700;
-  letter-spacing: 0.15em;
-  list-style:none;
+  letter-spacing: 0.11em;
   //margin-top:0;
   //padding-top:0.75em;
 }
+.nav li a{
+    display: block;
+    text-align: center;
+    //padding: 1em;
+    text-decoration: none;
+}
 .nav li {
-  width:100%;
-  margin:1em 0 0em 0;
-  display:block;
+  //width:100%;
+  margin:0.5em 0 0 0;
+  //display:block;
 }
-/*****
-.nav li:last-child {
-  //margin:0;
-}
-*****/
 .nav a{
   color: #942A1F;
   text-decoration: none;
-  padding: 0.25em 0 0.25em 0;
+  padding: 0.85em 0.85em 0.85em 0.85em;
 }
 .nav a:hover{
+  background-color: #03A0B4;
+  color: white;
+}
+.active {
+  background-color: #A9A9A9;
+  color: white !important;
+}
+/* Phone and Address */
+.phoneadd{
+  list-style-type: none;
+  font-family: ubuntu;
+  font-weight: 400;
+  display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	grid-column-gap: 1em;
+  text-align:center;
+  margin-left:-2.5em;
+  padding-bottom: 0.5em;
+}
+.phoneadd li{
+  padding:0em 0.75em;
+}
+.phoneadd a{
+  color: black;
+  text-decoration: none;
+}
+.phoneadd a:hover{
   color: #03A0B4;
 }
 
+/*************/
 /* MODIFIERS */
 /*************/
 .is-hidden {display:none;}
 .is-visible {display:block;}
 
-
-/* MEDIA QUERIES */
 /*****************/
-
-@media screen and (min-width:630px) {
+/* MEDIA Q 850px */
+/*****************/
+@media screen and (min-width:850px) {
+  .nav {
+    display: flex;
+	  justify-content: flex-end;
+    margin-left: 0em;
+    //margin-top:1em;
+    font-size:1.2em;
+  }
+  .nav li{
+    //margin-top: 2em;
+  }
+  .nav a{
+    color: #942A1F;
+    text-decoration: none;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin-left:-.75em;
+    //margin-top: 1.25em;
+}
+  .phoneadd{
+    display:flex;
+    justify-content: flex-end;
+    margin-left: 0em;
+  }
+  .phoneadd li{
+    margin-right:1em;
+  }
 /* Header */
 #header {
-  padding:1em;
+  //padding:1em; /* Turning Padding off made the whole HEADER section height shorter. Did that to show more of the Schedule Now container. I also made the banner img height max at 400px. */
   background-color: #E6E7E8;
 }
 #header-content {
@@ -127,15 +197,17 @@ p{
   overflow:hidden;
 }
 #header-logo {
-  padding:0;
+  //padding:0;
   background:none;
   float:left;
 }
 #header-nav  {
-  padding:.5em;
-  background:none;
-  float:right;
-  display:block;
+  //padding:.5em;
+  //background: none;
+  text-align: right;
+  display: block;
+  padding-top:1em;
+  height: 120px; /* is what WAS cropping the phone and address off, but add 'margin-left:0em' to the phoneadd class */
 }
 #header-nav-toggle {
   display:none;
@@ -143,7 +215,8 @@ p{
 
 /* LOGO */
 .logo {
-  width: 150px;
+  width: 200px;
+  padding-top:0.5em;
 }
 /* NAV */
 .nav li {
@@ -152,6 +225,7 @@ p{
   display:inline-block;
   }
 }
+/* END MEDIA Q 850px */
 
 /* FOOTER */
 footer{
