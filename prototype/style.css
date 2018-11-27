@@ -492,6 +492,8 @@ p{
 }
 .leftcol a{
   color: white;
+  font-family: ubuntu, san-serif;
+  font-weight: 400;
   text-decoration: none;
   display: inline-block;
   margin-top:1.5em;
