@@ -438,7 +438,7 @@ p{
   width:65%;
   top:30%;
   left:35%;
-  transform: scalex(-1);
+  //transform: scalex(-1);
   }
 }
 @media screen and (min-width:1000px){
@@ -452,7 +452,7 @@ p{
   width:65%;
   top:35%;
   left:35%;
-  transform: scalex(-1);
+  //transform: scalex(-1);
   }
 }
 .buttonpro{
