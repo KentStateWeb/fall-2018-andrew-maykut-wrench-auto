@@ -472,43 +472,53 @@ p{
 
 
 /* FOOTER */
-footer{
+#foot{
   background-color: #2e2e2f;
-  //padding: 1em 0em;
-  //margin-left: -2em;
+  padding: 1em 0em;
 }
-#foottext {
-	max-width: 1000px;
-	margin: auto;
-	padding: 1em 1em; /* top & bottom x left & right */
+.container{
+  width:90%;
+  max-width: 1000px;
+  margin:0 auto;
 }
-#foottext .leftcol{
-  width: 250px;
-}
-#foottext h3{
-  color: #03a0b4;
-  //margin-top: 1.5em;
-  margin-bottom: -0.5em;
-}
-#foottext p{
-  color: #e6e7e8;
+.footgrid{
+  margin-left: -2.5em;
 }
 
-@media screen and (min-width: 800px) {
-  #foottext{
+#foot h3{
+  color: #03a0b4;
+  margin-top: 1.5em;
+  margin-bottom: -0.5em;
+}
+#foot p{
+  color: #e6e7e8;
+}
+.leftcol a{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top:1.5em;
+}
+.leftcol a:hover{
+  color: #942A1F;
+}
+.copyright{
+  color: #03A0B4;
+}
+
+@media screen and (min-width: 850px) {
+  .footgrid{
     display: flex;
     justify-content: center;
   }
-  #foottext .leftcol{
-    width: 37%;
-    padding:1em 1em 1em 0;
+  .leftcol{
+    width: 34%;
+    padding-right:1em;
   }
-  #foottext .midcol{
-    width: 26%;
-    padding:1em 1em 1em 1em;
+  .midcol{
+    width: 33%;
   }
-  #foottext .rightcol{
-    width: 37%;
-    padding:1em 0em 1em 1em;
+  .rightcol{
+    width: 33%;
   }
 }
