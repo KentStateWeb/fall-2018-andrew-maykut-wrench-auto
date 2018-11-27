@@ -361,10 +361,15 @@ p{
 
 
 /* OFFERS + COUPONS */
-#main2{
+#mainc{
   width:90%;
   max-width:1000px;
   margin: 0 auto;
+}
+@media screen and (min-width:1000px) {
+  #mainc{
+    width: 100%;
+  }
 }
 .offerstitle{
   margin-bottom:0.5em;
