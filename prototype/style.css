@@ -64,10 +64,7 @@ p{
   cursor:pointer;
 }
 
-
-
 /* MODULES */
-
 
 /* MAIN */
 #mainB {
@@ -139,11 +136,9 @@ p{
   color: #03A0B4;
 }
 
-
 /* MODIFIERS */
 .is-hidden {display:none;}
 .is-visible {display:block;}
-
 
 /* MEDIA Q 850px */
 @media screen and (min-width:850px) {
@@ -359,7 +354,6 @@ p{
   }
 }
 
-
 /* OFFERS + COUPONS */
 #mainc{
   width:90%;
@@ -470,7 +464,6 @@ p{
 .buttonpro:hover{
 	background-color: #014a53;
 }
-
 
 /* FOOTER */
 #foot{
