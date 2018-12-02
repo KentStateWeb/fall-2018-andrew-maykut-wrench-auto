@@ -4,6 +4,9 @@
 img {
 	max-width: 100%;
 }
+body{
+  margin: 0;
+}
 
 /* BODY COPY */
 #maincontent ul{
@@ -13,6 +16,7 @@ img {
 h1{
   font-family: eurostile, sans-serif;
   font-weight: 800;
+  margin-bottom: -0.5em;
 }
 h2{
   font-family: eurostile, sans-serif;
@@ -39,7 +43,7 @@ p{
   line-height: 1.25em;
 }
 
-/* LAYOUT */
+/* HEADER LAYOUT */
 
 #header {
   position:relative;
@@ -65,13 +69,6 @@ p{
 }
 
 /* MODULES */
-
-/* MAIN */
-#mainB {
-  width:90%;
-  max-width:1000px;
-  margin: 0 auto;
-}
 
 /* Logo */
 .logo {
@@ -123,10 +120,13 @@ p{
 	grid-column-gap: 1em;
   text-align:center;
   margin-left:-2.5em;
+  margin-top:2em;
   padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  border-top: 1px solid #942B20;
 }
 .phoneadd li{
-  padding:0em 0.75em;
+  padding:0.5em 0.75em;
 }
 .phoneadd a{
   color: black;
@@ -148,9 +148,6 @@ p{
     margin-left: 0em;
     font-size:1.2em;
   }
-  .nav li{
-    //margin-top: 2em;
-  }
   .nav a{
     color: #942A1F;
     text-decoration: none;
@@ -161,13 +158,14 @@ p{
     display:flex;
     justify-content: flex-end;
     margin-left: 0em;
+    margin-top: 0em;
   }
   .phoneadd li{
     margin-right:1em;
   }
 /* Header */
 #header {
-  //padding:1em; /* Turning Padding off made the whole HEADER section height shorter. Did that to show more of the Schedule Now container. I also made the banner img height max at 400px. */
+  /*padding:1em; /* Turning Padding off made the whole HEADER section height shorter. Did that to show more of the Schedule Now container. I also made the banner img height max at 400px. */
   background-color: #E6E7E8;
 }
 #header-content {
@@ -180,6 +178,7 @@ p{
   float:left;
 }
 #header-nav  {
+  margin-bottom: 1em;
   text-align: right;
   display: block;
   padding-top:1em;
@@ -202,17 +201,72 @@ p{
   }
 }
 /* END MEDIA Q 850px */
+/* END HEADER LAYOUT */
 
-/* OPEN IMG */
+/* FOOTER */
+#foot{
+  background-color: #2e2e2f;
+  padding: 1em 0em;
+  margin-top: 3em;
+}
+.container{
+  width:90%;
+  max-width: 1000px;
+  margin:0 auto;
+}
+.footgrid{
+  margin-left: -2.5em;
+}
+
+#foot h3{
+  color: #03a0b4;
+  margin-bottom: -0.5em;
+}
+#foot p{
+  color: #e6e7e8;
+}
+.leftcol a{
+  color: white;
+  font-family: ubuntu, san-serif;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  margin-top:1.5em;
+}
+.leftcol a:hover{
+  color: #942A1F;
+}
+.copyright{
+  color: #03A0B4;
+}
+
+@media screen and (min-width: 850px) {
+  .footgrid{
+    display: flex;
+    justify-content: center;
+  }
+  .leftcol{
+    width: 34%;
+    padding-right:1em;
+  }
+  .midcol{
+    width: 33%;
+  }
+  .rightcol{
+    width: 33%;
+  }
+}
+/* END FOOTER */
+
+/* OPEN IMG = HOME */
 #openimg{
   position: relative;
   overflow: hidden;
   text-align: center;
-  max-width:1000px;
-  max-height:400px;
+  max-height:500px;
   display: block;
 	margin: 0 auto;
-  margin-bottom:-.25em;
+  margin-top: 1em;
 }
 .bannerimg{
   width: 100%;
@@ -224,7 +278,6 @@ p{
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  //overflow-y: auto;
 }
 .overlaytext{
   color: white;
@@ -235,7 +288,6 @@ p{
   padding: 0.5em 0.75em;
 }
 .openbanner{
-  max-width: 1000px;
   margin: auto;
 }
 @media screen and (min-width:350px) {
@@ -257,9 +309,67 @@ p{
     width: 40%;
   }
 }
+/* OPEN IMG = ABOUT */
+#openimgabout{
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  max-height:500px;
+  display: block;
+	margin: 0 auto;
+  margin-top:1em;
+}
+.bannerimgabout{
+  width: 100%;
+}
+#banneroverlayabout{
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.overlaytextabout{
+  color: white;
+  font-size: 0.75em;
+  font-style: italic;
+  line-height: 1.2em;
+  width: 50%;
+  padding: 0.5em 0.75em;
+}
+.openbannerabout{
+  margin: auto;
+}
+@media screen and (min-width:350px) {
+  .overlaytextabout{
+    font-size:0.9em;
+    line-height: 1.4em;
+  }
+}
+@media screen and (min-width:450px) {
+  .overlaytextabout{
+    font-size:1em;
+    width: 45%;
+  }
+}
+@media screen and (min-width:600px) {
+  .overlaytextabout{
+    font-size:1.3em;
+    line-height: 1.4em;
+    width: 40%;
+  }
+}
 
+
+/* HOME PAGE CSS */
 /* MAIN DOWN */
 /* SCHEDULE BUTTON */
+#mainB {
+  width:90%;
+  max-width:1000px;
+  margin: 0 auto;
+}
 #schedulecontainer{
   background-color: #942A1F;
   color: white;
@@ -281,7 +391,7 @@ p{
   margin-bottom:-0.25em;
   padding: 0 1em;
 }
-.buttonc{
+.buttona{
 	background-color: #e6e7e8;
 	font-size: 1.2em;
 	padding: 1em 1.2em;
@@ -293,11 +403,11 @@ p{
   box-shadow: -4px 4px 4px #3c3c3c;
 	transition: .3s background-color ease-in-out;
 }
-.buttonc:hover{
+.buttona:hover{
   background-color: #03A0B4; /* #94989c */
   color: white;
 }
-.text2{
+.texta{
   transition: .3s color ease-in-out;
   font-size:1.25em;
   font-family: ubuntu, san-serif;
@@ -339,7 +449,7 @@ p{
     margin-bottom: 1em;
     border-radius: 10px;
   }
-  .buttonc{
+  .buttona{
     font-size:1.5em;
     padding:0.5em 1em;
   }
@@ -355,6 +465,9 @@ p{
 }
 
 /* OFFERS + COUPONS */
+#mainc h1{
+  font-size: 1.5em;
+}
 #mainc{
   width:90%;
   max-width:1000px;
@@ -465,56 +578,247 @@ p{
 	background-color: #014a53;
 }
 
-/* FOOTER */
-#foot{
-  background-color: #2e2e2f;
-  padding: 1em 0em;
+
+/* ABOUT US PAGE CSS*/
+/* ABOUT US DOWN */
+/* SCHEDULE BUTTON */
+#schedulecontainerb{
+  background-color: #E6E7E8;
+  color: #942B20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-.container{
+#schedulecontainerb h2{
+  text-align: center;
+  margin-top:1em;
+  margin-bottom:-0.25em;
+  padding: 0 0.5em;
+}
+#schedulecontainerb p{
+  text-align: center;
+  margin-bottom:-0.25em;
+  padding: 0 2em;
+  color: black;
+}
+#schedulecontainerb h3{
+  margin-bottom:-0.5em;
+  color: #03A0B4;
+}
+.buttonb{
+	background-color: #03A0B4;
+	font-size: 1.2em;
+	padding: 0.5em 1em;
+	display: inline-block;
+	margin: 1.25em 1.5em 1.25em 1.5em;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+  box-shadow: -4px 4px 4px #3c3c3c;
+	transition: .3s background-color ease-in-out;
+}
+.buttonb:hover{
+  background-color: #014a53;
+  color: white;
+}
+.textb{
+  transition: .3s color ease-in-out;
+  font-size:1.25em;
+  font-family: ubuntu, san-serif;
+  font-weight: 700;
+}
+/* BUTTON + ABOUT US media q */
+#sche_aboutp{
+  padding-top: 1em;
+}
+.bullets{
+  margin-left: 1.5em;
+}
+.staffA{
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom:4em;
+  margin-top: 4em;
+}
+.staffA img{
+  border-radius: 10px;
+}
+@media screen and (min-width:750px) {
+  #sche_aboutp{
+    display: flex;
+    align-items: center;
+    width:90%;
+    max-width: 1000px;
+    margin:0 auto;
+  }
+  #schedulecontainerb{
+    order: 2;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+  }
+  .aboutp{
+    width: 75%;
+  }
+  .buttonb{
+    padding:0.5em 1em;
+  }
+  #mainabout{
+  max-width:1000px;
+  margin: 0 auto;
+  }
+}
+@media screen and (min-width:1000px) {
+  .staffA{
+    width: 100%;
+  }
+  #sche_aboutp{
+    width: 100%;
+  }
+}
+/* ABOUT US CONTENT */
+.staffA li{
+  font-family: ubuntu, sans-serif;
+  font-weight: 400;
+  line-height: 1.25em;
+}
+
+@media screen and (min-width:850px){
+  .abouttop{
+    font-size:1.2em;
+  }
+}
+.aboutp{
   width:90%;
   max-width: 1000px;
   margin:0 auto;
 }
-.footgrid{
-  margin-left: -2.5em;
-}
-
-#foot h3{
-  color: #03a0b4;
-  margin-top: 1.5em;
+#stafflist h2{
   margin-bottom: -0.5em;
 }
-#foot p{
-  color: #e6e7e8;
-}
-.leftcol a{
-  color: white;
-  font-family: ubuntu, san-serif;
+#stafflist{
+  color: #03A0B4;
+  font-family: ubuntu, sans-serif;
   font-weight: 400;
-  text-decoration: none;
-  display: inline-block;
-  margin-top:1.5em;
+  list-style-type: none;
+  margin: 0 auto;
+  margin-top: 1em;
 }
-.leftcol a:hover{
-  color: #942A1F;
+#stafflist li{
+  margin-left: -2.5em;
 }
-.copyright{
+#stafflist .sech{
+  font-family: ubuntu, sans-serif;
+  font-weight: 700;
   color: #03A0B4;
 }
-
-@media screen and (min-width: 850px) {
-  .footgrid{
+#stafflist p{
+  color: black;
+}
+.headimg{
+  width: 100%;
+  max-width:350px;
+  display: block;
+  margin: 0 auto;
+}
+.listtext{
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom:2em;
+}
+@media screen and (min-width: 550px) {
+	#stafflist {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 3.5em;
+	}
+}
+@media screen and (min-width: 700px) {
+	#stafflist {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 3.5em;
+	}
+}
+#hire{
+  width:90%;
+  max-width: 1000px;
+  margin:0 auto;
+}
+@media screen and (min-width:750px) {
+  #hire{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    width:90%;
+    max-width: 1000px;
+    margin:0 auto;
   }
-  .leftcol{
-    width: 34%;
-    padding-right:1em;
+  #hire #jobbutton{
+    margin-left: 1.5em;
   }
-  .midcol{
-    width: 33%;
+  .hiretext{
+    width: 100%;
   }
-  .rightcol{
-    width: 33%;
+  #mainabout{
+  max-width:1000px;
+  margin: 0 auto;
+  }
+}
+#jobbutton{
+  background-color: #E6E7E8;
+  color: #942B20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+#jobbutton h2{
+  text-align: center;
+  margin-top:1em;
+  margin-bottom:-0.25em;
+  padding: 0 0.5em;
+}
+#jobbutton p{
+  text-align: center;
+  margin-bottom:-0.25em;
+  padding: 0 2em;
+  color: black;
+}
+#jobbutton h3{
+  margin-bottom:-0.5em;
+  color: #03A0B4;
+}
+.buttond{
+	background-color: #03A0B4;
+	font-size: 1.2em;
+	padding: 0.5em 1em;
+	display: inline-block;
+	margin: 1.25em 1.5em 1.25em 1.5em;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+  box-shadow: -4px 4px 4px #3c3c3c;
+	transition: .3s background-color ease-in-out;
+  text-align: center;
+}
+.buttond:hover{
+  background-color: #014a53;
+  color: white;
+}
+.text3{
+  transition: .3s color ease-in-out;
+  font-size:1.25em;
+  font-family: ubuntu, san-serif;
+  font-weight: 700;
+}
+@media screen and (min-width:1000px){
+  #hire{
+    width: 100%;
   }
 }
