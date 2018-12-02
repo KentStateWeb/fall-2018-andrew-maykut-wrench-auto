@@ -365,6 +365,9 @@ p{
 /* HOME PAGE CSS */
 /* MAIN DOWN */
 /* SCHEDULE BUTTON */
+#main{
+  margin-top:1em;
+}
 #mainB {
   width:90%;
   max-width:1000px;
@@ -582,6 +585,9 @@ p{
 /* ABOUT US PAGE CSS*/
 /* ABOUT US DOWN */
 /* SCHEDULE BUTTON */
+hr{
+  margin-top: 10px;
+}
 #schedulecontainerb{
   background-color: #E6E7E8;
   color: #942B20;
