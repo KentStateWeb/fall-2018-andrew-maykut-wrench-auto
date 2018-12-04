@@ -285,7 +285,7 @@ p{
   font-style: italic;
   line-height: 1.2em;
   width: 50%;
-  padding: 0.5em 0.75em;
+  padding: 0.5em 2em;
 }
 .openbanner{
   margin: auto;
@@ -302,11 +302,16 @@ p{
     width: 45%;
   }
 }
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
   .overlaytext{
-    font-size:1.3em;
+    font-size:1.5em;
     line-height: 1.4em;
-    width: 40%;
+    width: 45%;
+  }
+}
+@media screen and (min-width:1000px){
+  .overlaytext{
+    font-size: 2em;
   }
 }
 /* OPEN IMG = ABOUT */
@@ -353,11 +358,16 @@ p{
     width: 45%;
   }
 }
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
   .overlaytextabout{
-    font-size:1.3em;
+    font-size:1.5em;
     line-height: 1.4em;
     width: 40%;
+  }
+}
+@media screen and (min-width:1000px){
+  .overlaytextabout{
+    font-size: 2em;
   }
 }
 /* OPEN IMG = SERVICES */
@@ -405,11 +415,16 @@ p{
     width: 45%;
   }
 }
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
   .overlaytextser{
-    font-size:1.3em;
+    font-size:1.5em;
     line-height: 1.4em;
     width: 40%;
+  }
+}
+@media screen and (min-width:1000px){
+  .overlaytextser{
+    font-size: 2em;
   }
 }
 /* OPEN IMG = RADIATOR */
@@ -1259,11 +1274,16 @@ hr{
     width: 45%;
   }
 }
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
   .overlaytextfaq{
-    font-size:1.3em;
+    font-size:1.5em;
     line-height: 1.4em;
     width: 40%;
+  }
+}
+@media screen and (min-width:1000px){
+  .overlaytextfaq{
+    font-size: 2em;
   }
 }
 
