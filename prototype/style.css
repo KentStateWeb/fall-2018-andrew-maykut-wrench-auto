@@ -18,6 +18,11 @@ h1{
   font-weight: 800;
   margin-bottom: -0.5em;
 }
+@media screen and (min-width:1000px){
+  h1{
+    font-size: 2em;
+  }
+}
 h2{
   font-family: eurostile, sans-serif;
   font-weight: 700;
@@ -589,6 +594,11 @@ p{
 /* OFFERS + COUPONS */
 #mainc h1{
   font-size: 1.5em;
+}
+@media screen and (min-width:1000px){
+  #mainc h1{
+    font-size: 2em;
+  }
 }
 #mainc{
   width:90%;
@@ -1293,6 +1303,14 @@ hr{
   max-width:1000px;
   margin: 0 auto;
 }
+/*@media screen and (min-width:1000px){
+  #radiatorcontent{
+    width: 80%;
+    max-width:1000px;
+    margin-left: 0;
+  }
+}*/
+
 /* ACCORDION SECTION */
 .accordion, .panel{
   max-width: 650px;
