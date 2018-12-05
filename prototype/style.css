@@ -1341,7 +1341,7 @@ hr{
   float: right;
   margin-left: 5px;
 }
-.active:after {
+.accordion.active:after {
   content: "\2212";
   color: white;
 }
