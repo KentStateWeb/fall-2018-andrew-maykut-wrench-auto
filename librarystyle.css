@@ -1,0 +1,399 @@
+* {
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+}
+
+/* HEADINGS */
+h1{
+  font-family: eurostile, sans-serif;
+  font-weight: 800;
+  margin-bottom: -0.25em;
+}
+h2{
+  font-family: eurostile, sans-serif;
+  font-weight: 700;
+  color: #942A1F;
+  margin-bottom: -0.25em;
+}
+h3{
+  font-family: eurostile, sans-serif;
+  font-weight: 700;
+}
+h4{
+  font-family: ubuntu, san-serif;
+  font-weight: 700;
+  margin-bottom: -0.5em;
+}
+h5{
+  font-family: ubuntu, san-serif;
+  font-weight: 400;
+}
+p{
+  font-family: ubuntu, sans-serif;
+  font-weight: 400;
+  line-height: 1.25em;
+}
+
+/* TOP PAGE */
+.toppage{
+  width:90%;
+  max-width:1000px;
+  margin:0 auto;
+  margin-bottom: 2em;
+  border-bottom: 2px solid #03a0b4;
+}
+.toppage h1{
+  text-transform: uppercase;
+}
+
+/* PATTERN HEADINGS */
+.navpat{
+  margin-bottom: 1em;
+}
+.footpat{
+  margin-top: 3em;
+  margin-bottom: -1.25em;
+}
+.colorpat{
+  margin-top: 3em;
+}
+.typepat{
+  margin-top: 3em;
+}
+.parapat{
+  margin-top: 3em;
+}
+.buttonpat{
+  margin-top: 3em;
+}
+
+/* MAIN All */
+.mainlib{
+  width: 90%;
+  max-width: 1000px;
+  margin:0 auto;
+}
+
+/* Navigation "HEADER" */
+#header {
+  position:relative;
+}
+#header-content {
+  width:100%;
+}
+#header-logo {
+  padding:1em;
+  background-color: #E6E7E8;
+}
+#header-nav {
+  background-color: #E6E7E8;
+}
+#header-nav-toggle {
+  color:#942A1F;
+  font-size:2.25em;
+  position:absolute;
+  top:.5em;
+  right:5%;
+  z-index:1;
+  cursor:pointer;
+}
+
+/* Logo */
+.logo {
+  width: 120px;
+}
+/* Nav */
+.nav {
+  display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	grid-column-gap: 1em;
+	list-style-type: none;
+  margin-top: 0em;
+  margin-left: -2.5em;
+  font-family: eurostile, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+}
+.nav li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.nav li {
+  margin:0.5em 0 0 0;
+}
+
+.nav a{
+  color: #942A1F;
+  text-decoration: none;
+  padding: 0.85em 0.85em 0.85em 0.85em;
+}
+.nav a:hover{
+  background-color: #03A0B4;
+  color: white;
+}
+.active {
+  background-color: #A9A9A9;
+  color: white !important;
+}
+/* Phone and Address */
+.phoneadd{
+  list-style-type: none;
+  font-family: ubuntu;
+  font-weight: 400;
+  display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	grid-column-gap: 1em;
+  text-align:center;
+  margin-top:2em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  border-top:1px solid #942B20;
+}
+.phoneadd li{
+  margin-left:-3.5em;
+  padding:0.5em 0.75em;
+}
+.phoneadd a{
+  color: black;
+  text-decoration: none;
+}
+.phoneadd a:hover{
+  color: #03A0B4;
+}
+
+/*************/
+/* MODIFIERS */
+/*************/
+.is-hidden {display:none;}
+.is-visible {display:block;}
+
+/*****************/
+/* MEDIA Q 850px */
+/*****************/
+
+@media screen and (min-width:900px) {
+  .nav {
+    display: flex;
+	  justify-content: flex-end;
+    margin-left: 0em;
+    font-size:1.2em;
+  }
+  .nav a{
+    color: #942A1F;
+    text-decoration: none;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin-left:-.75em;
+  }
+  .phoneadd{
+    display:flex;
+    justify-content: flex-end;
+    margin-left: 0em;
+    margin-top:0em;
+  }
+  .phoneadd li{
+    margin-left: 0em;
+    margin-right:1em;
+  }
+  /* Header */
+  #header {
+    /*padding:1em; Turning Padding off made the whole HEADER section height shorter. Did that to show more of the Schedule Now container. I also made the banner img height max at 400px. */
+    background-color: #E6E7E8;
+  }
+  #header-content {
+    max-width:1000px;
+    margin:0 auto;
+    overflow:hidden;
+  }
+  #header-logo {
+    background:none;
+    float:left;
+  }
+  #header-nav  {
+    margin-bottom:1em;
+    text-align: right;
+    display: block;
+    padding-top:1em;
+    height: 120px; /* is what WAS cropping the phone and address off, but add 'margin-left:0em' to the phoneadd class */
+  }
+  #header-nav-toggle {
+    display:none;
+  }
+
+  /* LOGO */
+  .logo {
+    width: 200px;
+    padding-top:0.5em;
+  }
+  /* NAV */
+  .nav li {
+    width:auto;
+    margin:0 .5em;
+    display:inline-block;
+  }
+}
+/* END MEDIA Q 850px */
+
+/**** FOOTER ****/
+#foot{
+  background-color: #2e2e2f;
+  padding: 1em 0em;
+  margin-top: 2em;
+}
+.container{
+  width:90%;
+  max-width: 1000px;
+  margin:0 auto;
+}
+.footgrid{
+  margin-left: -2.5em;
+}
+
+#foot h3{
+  color: #03a0b4;
+  margin-top: 1.5em;
+  margin-bottom: -0.5em;
+}
+#foot p{
+  color: #e6e7e8;
+}
+.leftcol a{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top:1.5em;
+}
+.leftcol a:hover{
+  color: #942A1F;
+}
+.copyright{
+  color: #03A0B4;
+}
+
+@media screen and (min-width: 850px) {
+  .footgrid{
+    display: flex;
+    justify-content: center;
+  }
+  .leftcol{
+    width: 34%;
+    padding-right:1em;
+  }
+  .midcol{
+    width: 33%;
+  }
+  .rightcol{
+    width: 33%;
+  }
+}
+
+.ase125{
+  height: 125px;
+}
+.ase200{
+  width: 200px;
+}
+
+
+/* COLORS */
+.colorpat{
+  margin-bottom: 1em;
+}
+.swatch{
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  margin: 0em 0.5em;
+  margin-bottom: 0.5em;
+}
+.swatch-red{
+  background-color: #942A1F;
+}
+.swatch-blue{
+  background-color: #03A0B4;
+}
+.swatch-silver{
+  background-color: #E6E7E8;
+}
+.swatch-grey{
+  background-color: #A9A9A9;
+}
+.swatch-charcoal{
+  background-color: #2E2E2F;
+}
+
+
+/* TYPOGRAPHY */
+.typelist li{
+  margin-bottom: 0.5em;
+  list-style-type: circle;
+}
+.euheavy{
+  font-family: eurostile, sans-serif;
+  font-weight: 800;
+}
+.eubold{
+  font-family: eurostile, sans-serif;
+  font-weight: 700;
+}
+.ubreg{
+  font-family: ubuntu, sans-serif;
+  font-weight: 400;
+}
+.ubital{
+  font-family: ubuntu, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* BUTTONS */
+.buttonc{
+	background-color: #e6e7e8;
+	font-size: 1.2em;
+	padding: 1em 1.2em;
+	display: inline-block;
+	margin: 1.5em 1.5em 1.5em 1.5em;
+	color: #027583;
+	text-decoration: none;
+	border-radius: 10px;
+  box-shadow: -4px 4px 4px #3c3c3c;
+	transition: .3s background-color ease-in-out;
+}
+.buttonc:hover{
+  background-color: #03A0B4; /* #94989c */
+  color: white;
+}
+.text2{
+  transition: .3s color ease-in-out;
+  font-size:1.25em;
+  font-family: ubuntu, san-serif;
+  font-weight: 700;
+}
+
+
+.buttonpro3{
+  background-color: #027583;
+	font-size: 1em;
+	padding: 1em 1em;
+	display: inline-block;
+  margin: 0em 1.5em 1.5em 1.5em;
+	color: #FFFFFF;
+	text-decoration: none;
+	border-radius: 10px;
+  box-shadow: -4px 4px 4px #777777;
+	transition: .3s background-color ease-in-out;
+}
+.buttonpro3:hover{
+	background-color: #014149;
+}
+.text3{
+  font-size:1.25em;
+  font-family: ubuntu, san-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}

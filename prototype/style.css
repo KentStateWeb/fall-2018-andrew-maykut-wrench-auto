@@ -73,13 +73,15 @@ p{
   cursor:pointer;
 }
 
-/* MODULES */
-
 /* Logo */
 .logo {
   width: 120px;
 }
-
+/* LOGO */
+.logo {
+  width: 200px;
+  padding-top:0.5em;
+}
 /* Nav */
 .nav {
   display: grid;
@@ -124,8 +126,8 @@ p{
 	justify-content: space-between;
 	grid-column-gap: 1em;
   text-align:center;
-  margin-left:-2.5em;
   margin-top:2em;
+  margin-left: -2.5em;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
   border-top: 1px solid #942B20;
@@ -140,7 +142,6 @@ p{
 .phoneadd a:hover{
   color: #03A0B4;
 }
-
 /* MODIFIERS */
 .is-hidden {display:none;}
 .is-visible {display:block;}
@@ -168,41 +169,40 @@ p{
   .phoneadd li{
     margin-right:1em;
   }
-/* Header */
-#header {
-  /*padding:1em; /* Turning Padding off made the whole HEADER section height shorter. Did that to show more of the Schedule Now container. I also made the banner img height max at 400px. */
-  background-color: #E6E7E8;
-}
-#header-content {
-  max-width:1000px;
-  margin:0 auto;
-  overflow:hidden;
-}
-#header-logo {
-  background:none;
-  float:left;
-}
-#header-nav  {
-  margin-bottom: 1em;
-  text-align: right;
-  display: block;
-  padding-top:1em;
-  height: 120px; /* is what WAS cropping the phone and address off, but add 'margin-left:0em' to the phoneadd class */
-}
-#header-nav-toggle {
-  display:none;
+  /* Header */
+  #header {
+    /*padding:1em; /* Turning Padding off made the whole HEADER section height shorter. Did that to show more of the Schedule Now container. I also made the banner img height max at 400px. */
+    background-color: #E6E7E8;
   }
-
-/* LOGO */
-.logo {
-  width: 200px;
-  padding-top:0.5em;
-}
-/* NAV */
-.nav li {
-  width:auto;
-  margin:0 .5em;
-  display:inline-block;
+  #header-content {
+    max-width:1000px;
+    margin:0 auto;
+    overflow:hidden;
+  }
+  #header-logo {
+    background:none;
+    float:left;
+  }
+  #header-nav  {
+    margin-bottom: 1em;
+    text-align: right;
+    display: block;
+    padding-top:1em;
+    height: 120px; /* is what WAS cropping the phone and address off, but add 'margin-left:0em' to the phoneadd class */
+  }
+  #header-nav-toggle {
+    display:none;
+  }
+  /* LOGO */
+  .logo {
+    width: 200px;
+    padding-top:0.5em;
+  }
+  /* NAV */
+  .nav li {
+    width:auto;
+    margin:0 .5em;
+    display:inline-block;
   }
 }
 /* END MEDIA Q 850px */
@@ -263,6 +263,10 @@ p{
 }
 /* END FOOTER */
 
+
+
+/* HOME PAGE CSS */
+/* MAIN DOWN */
 /* OPEN IMG = HOME */
 #openimg{
   position: relative;
@@ -319,176 +323,6 @@ p{
     font-size: 2em;
   }
 }
-/* OPEN IMG = ABOUT */
-#openimgabout{
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  max-height:500px;
-  display: block;
-	margin: 0 auto;
-  margin-top:1em;
-}
-.bannerimgabout{
-  width: 100%;
-}
-#banneroverlayabout{
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-.overlaytextabout{
-  color: white;
-  font-size: 0.75em;
-  font-style: italic;
-  line-height: 1.2em;
-  width: 50%;
-  padding: 0.5em 0.75em;
-}
-.openbannerabout{
-  margin: auto;
-}
-@media screen and (min-width:350px) {
-  .overlaytextabout{
-    font-size:0.9em;
-    line-height: 1.4em;
-  }
-}
-@media screen and (min-width:450px) {
-  .overlaytextabout{
-    font-size:1em;
-    width: 45%;
-  }
-}
-@media screen and (min-width:700px) {
-  .overlaytextabout{
-    font-size:1.5em;
-    line-height: 1.4em;
-    width: 40%;
-  }
-}
-@media screen and (min-width:1000px){
-  .overlaytextabout{
-    font-size: 2em;
-  }
-}
-/* OPEN IMG = SERVICES */
-#openimgser{
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  max-height:500px;
-  display: block;
-	margin: 0 auto;
-  margin-bottom:-.25em;
-  margin-top:1em;
-}
-.bannerimgser{
-  width: 100%;
-}
-#banneroverlayser{
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-.overlaytextser{
-  color: white;
-  font-size: 0.75em;
-  font-style: italic;
-  line-height: 1.2em;
-  width: 50%;
-  padding: 0.5em 0.75em;
-}
-.openbannerser{
-  margin: auto;
-}
-@media screen and (min-width:350px) {
-  .overlaytextser{
-    font-size:0.9em;
-    line-height: 1.4em;
-  }
-}
-@media screen and (min-width:450px) {
-  .overlaytextser{
-    font-size:1em;
-    width: 45%;
-  }
-}
-@media screen and (min-width:700px) {
-  .overlaytextser{
-    font-size:1.5em;
-    line-height: 1.4em;
-    width: 40%;
-  }
-}
-@media screen and (min-width:1000px){
-  .overlaytextser{
-    font-size: 2em;
-  }
-}
-/* OPEN IMG = RADIATOR */
-/*#openimgrad{
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  max-height:500px;
-  display: block;
-	margin: 0 auto;
-  margin-bottom:-.25em;
-  margin-top:1em;
-}
-.bannerimgrad{
-  width: 100%;
-}
-#banneroverlayrad{
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-.overlaytextrad{
-  color: white;
-  font-size: 0.75em;
-  font-style: italic;
-  line-height: 1.2em;
-  width: 50%;
-  padding: 0.5em 0.75em;
-}
-.openbannerrad{
-  margin: auto;
-}
-@media screen and (min-width:350px) {
-  .overlaytextrad{
-    font-size:0.9em;
-    line-height: 1.4em;
-  }
-}
-@media screen and (min-width:450px) {
-  .overlaytextrad{
-    font-size:1em;
-    width: 45%;
-  }
-}
-@media screen and (min-width:600px) {
-  .overlaytextrad{
-    font-size:1.3em;
-    line-height: 1.4em;
-    width: 40%;
-  }
-}*/
-
-
-/* HOME PAGE CSS */
-/* MAIN DOWN */
-/* SCHEDULE BUTTON */
 #main{
   margin-top:1em;
 }
@@ -714,6 +548,62 @@ p{
 /* ABOUT US PAGE CSS*/
 /* ABOUT US DOWN */
 /* SCHEDULE BUTTON */
+/* OPEN IMG = ABOUT */
+#openimgabout{
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  max-height:500px;
+  display: block;
+	margin: 0 auto;
+  margin-top:1em;
+}
+.bannerimgabout{
+  width: 100%;
+}
+#banneroverlayabout{
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.overlaytextabout{
+  color: white;
+  font-size: 0.75em;
+  font-style: italic;
+  line-height: 1.2em;
+  width: 50%;
+  padding: 0.5em 0.75em;
+}
+.openbannerabout{
+  margin: auto;
+}
+@media screen and (min-width:350px) {
+  .overlaytextabout{
+    font-size:0.9em;
+    line-height: 1.4em;
+  }
+}
+@media screen and (min-width:450px) {
+  .overlaytextabout{
+    font-size:1em;
+    width: 45%;
+  }
+}
+@media screen and (min-width:700px) {
+  .overlaytextabout{
+    font-size:1.5em;
+    line-height: 1.4em;
+    width: 40%;
+  }
+}
+@media screen and (min-width:1000px){
+  .overlaytextabout{
+    font-size: 2em;
+  }
+}
 hr{
   margin-top: 10px;
 }
@@ -961,7 +851,63 @@ hr{
 
 /* SERVICE PAGE CSS */
 /* MAIN DOWN */
-/**** MAIN DOWN ****/
+/* OPEN IMG = SERVICES */
+#openimgser{
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  max-height:500px;
+  display: block;
+	margin: 0 auto;
+  margin-bottom:-.25em;
+  margin-top:1em;
+}
+.bannerimgser{
+  width: 100%;
+}
+#banneroverlayser{
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.overlaytextser{
+  color: white;
+  font-size: 0.75em;
+  font-style: italic;
+  line-height: 1.2em;
+  width: 50%;
+  padding: 0.5em 0.75em;
+}
+.openbannerser{
+  margin: auto;
+}
+@media screen and (min-width:350px) {
+  .overlaytextser{
+    font-size:0.9em;
+    line-height: 1.4em;
+  }
+}
+@media screen and (min-width:450px) {
+  .overlaytextser{
+    font-size:1em;
+    width: 45%;
+  }
+}
+@media screen and (min-width:700px) {
+  .overlaytextser{
+    font-size:1.5em;
+    line-height: 1.4em;
+    width: 40%;
+  }
+}
+@media screen and (min-width:1000px){
+  .overlaytextser{
+    font-size: 2em;
+  }
+}
 .serviceintro{
   width:90%;
   max-width:1000px;
@@ -972,6 +918,7 @@ hr{
   max-width:1000px;
   margin: 0 auto;
 }
+/**** MAIN DOWN ****/
 /* SCHEDULE BUTTON */
 #schedulecontainerser{
   background-color: #E6E7E8;
