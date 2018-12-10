@@ -323,14 +323,21 @@ p{
     font-size: 2em;
   }
 }
-#main{
-  margin-top:1em;
+
+/**** MAIN DOWN ****/
+hr{
+  border: 1px solid #03A0B4;
 }
-#mainB {
-  width:90%;
-  max-width:1000px;
-  margin: 0 auto;
+.bodylist{
+  color: #027583;
+  font-family: ubuntu, sans-serif;
+  font-weight: 400;
+  list-style-type: circle;
 }
+.bodylist li{
+  padding-bottom: 0.5em;
+}
+/* SCHEDULE BUTTON */
 #schedulecontainer{
   background-color: #942A1F;
   color: white;
@@ -352,7 +359,8 @@ p{
   margin-bottom:-0.25em;
   padding: 0 1em;
 }
-.buttona{
+
+.buttonc{
 	background-color: #e6e7e8;
 	font-size: 1.2em;
 	padding: 1em 1.2em;
@@ -364,29 +372,29 @@ p{
   box-shadow: -4px 4px 4px #3c3c3c;
 	transition: .3s background-color ease-in-out;
 }
-.buttona:hover{
+.buttonc:hover{
   background-color: #03A0B4; /* #94989c */
   color: white;
 }
-.texta{
+.text2{
   transition: .3s color ease-in-out;
   font-size:1.25em;
   font-family: ubuntu, san-serif;
   font-weight: 700;
 }
-@media screen and (min-width:850px){
-  .whyp{
-    font-size:1.2em;
-  }
+
+#schedulecontainer{
+  margin-top: 1em;
 }
-.bodylist{
-  color: #03A0B4;
-  font-family: ubuntu, sans-serif;
-  font-weight: 400;
-  list-style-type: circle;
+.whyusp{
+  width:90%;
+  max-width: 1000px;
+  margin:0 auto;
 }
-.content{
-  margin-bottom:2em;
+#list_certs{
+  width:90%;
+  max-width: 1000px;
+  margin:0 auto;
 }
 .cert1{
   max-width: 125px;
@@ -405,78 +413,116 @@ p{
 	grid-column-gap: 1em;
   margin: 0 auto;
   margin-top:2em;
-  margin-bottom:4em;
+  margin-bottom:3em;
 }
 @media screen and (min-width:750px) {
+  .buttonc{
+    font-size:1.5em;
+    padding:0.5em 1em;
+  }
+  #sche_whyus{
+    display: flex;
+    align-items: center;
+    width:90%;
+    max-width: 1000px;
+    margin:0 auto;
+  }
   #schedulecontainer{
-    float: right;
-    width: 400px;
+    order: 2;
     margin-left: 1.5em;
     margin-bottom: 1em;
     border-radius: 10px;
   }
-  .buttona{
-    font-size:1.5em;
-    padding:0.5em 1em;
+  .whyusp{
+    width: 75%;
   }
-  #main{
+  #list_certs{
+    display: flex;
+    align-items: center;
+    width:90%;
+    max-width: 1000px;
+    margin:0 auto;
+  }
+  .whylisttext{
+    width: 50%;
+  }
+  #mainhome{
   max-width:1000px;
   margin: 0 auto;
   }
 }
 @media screen and (min-width:1000px) {
+  #sche_whyus{
+    width: 100%;
+  }
+  .whyp{
+    font-size: 1.2em;
+  }
+  #list_certs{
+    width: 100%;
+  }
   #mainB{
     width: 100%;
   }
+  .certimgs{
+    max-width: 300px;
+    margin-left: 7em;
+  }
+  .cert1{
+    max-width: 175px;
+  }
+  .cert2{
+    max-height: 175px;
+  }
 }
 
+.space{
+  margin-bottom: 5em;
+}
 /* OFFERS + COUPONS */
-#mainc h1{
-  font-size: 1.5em;
-}
-@media screen and (min-width:1000px){
-  #mainc h1{
-    font-size: 2em;
-  }
-}
-#mainc{
-  width:90%;
-  max-width:1000px;
-  margin: 0 auto;
-}
-@media screen and (min-width:1000px) {
-  #mainc{
-    width: 100%;
-  }
-}
-.offerstitle{
-  margin-bottom:0.5em;
-}
+/********************/
 .view{
-  margin-top:-1em;
   margin-bottom:2em;
 }
+.vmore1{
+  font-family: ubuntu;
+  font-weight: 400;
+}
 .viewmore{
+  background-color: #e6e7e8;
+  padding: 0.5em;
+  border-radius: 10px;
   text-decoration: none;
-  color: #03A0B4;
+  color: #027583;
+  transition: .3s background-color ease-in-out;
 }
 .viewmore:hover{
-  color: #942A1F;
+  background-color: #027583;
+  color: white;
+  transition: .3s color ease-in-out;
 }
 .details{
   font-size:0.75em;
 }
-#offers{
+
+/* Offers CSS */
+.couptitle{
+  width: 90%;
+  max-width: 1000px;
+	margin: auto;
+}
+#coupons{
+  width: 90%;
   max-width: 1000px;
 	margin: auto;
   display: flex;
   justify-content: center;
 }
-#offers ul{
+#coupons ul{
   list-style-type: none;
   margin-left:-2.5em;
 }
-.offers_text li{
+.coupons_text li{
   margin-bottom: 1em;
 }
 #off_contain{
@@ -494,11 +540,18 @@ p{
   position: relative;
   z-index:100;
 }
+
 .imgback{
+  visibility: hidden;
+}
+.imgbackpromo{
   visibility: hidden;
 }
 @media screen and (min-width:350px){
   .imgback{
+    visibility: visible;
+  }
+  .imgbackpromo{
     visibility: visible;
   }
 }
@@ -508,8 +561,16 @@ p{
   top:33%;
   left:35%;
 }
+.imgbackpromo{
+  position: absolute;
+  width:50%;
+  top:35%;
+  left:47%;
+}
+
+
 @media screen and (min-width:700px){
-  .offers_text{
+  .coupons_text{
     display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 1em;
@@ -521,18 +582,37 @@ p{
   left:35%;
   }
 }
+
 @media screen and (min-width:1000px){
-  .offers_text{
+  #coupons{
+    width: 100%;
+  }
+  .coupons_text{
     display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-column-gap: 1em;
   }
   .imgback img{
   position: absolute;
-  width:65%;
+  width:55%;
   top:35%;
-  left:35%;
+  left:45%;
   }
+  .imgbackpromo{
+    position: absolute;
+    width:50%;
+    top:39%;
+    left:49%;
+  }
+  .couptitle{
+    width: 100%;
+  }
+}
+
+.coup1{
+  font-family: ubuntu;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 .buttonpro{
   background-color: #03A0B4;
