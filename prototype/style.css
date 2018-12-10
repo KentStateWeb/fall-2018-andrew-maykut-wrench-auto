@@ -374,6 +374,11 @@ p{
   font-family: ubuntu, san-serif;
   font-weight: 700;
 }
+@media screen and (min-width:850px){
+  .whyp{
+    font-size:1.2em;
+  }
+}
 .bodylist{
   color: #03A0B4;
   font-family: ubuntu, sans-serif;
