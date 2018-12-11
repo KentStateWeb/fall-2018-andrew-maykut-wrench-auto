@@ -219,9 +219,6 @@ p{
   max-width: 1000px;
   margin:0 auto;
 }
-.footgrid{
-  margin-left: -2.5em;
-}
 
 #foot h3{
   color: #03A0B4;
@@ -260,6 +257,11 @@ p{
   }
   .rightcol{
     width: 33%;
+  }
+}
+@media screen and (min-width:1000px){
+  .container{
+    width: 100%;
   }
 }
 /* END FOOTER */
