@@ -224,8 +224,9 @@ p{
 }
 
 #foot h3{
-  color: #03a0b4;
+  color: #03A0B4;
   margin-bottom: -0.5em;
+  letter-spacing: 0.07em;
 }
 #foot p{
   color: #e6e7e8;
@@ -746,6 +747,10 @@ hr{
 }
 .bullets{
   margin-left: 1.5em;
+  color: #027583;
+}
+.sech{
+  color: #027583;
 }
 .staffA{
   width: 90%;
@@ -1006,6 +1011,10 @@ hr{
 #servicecontent li{
   padding-bottom: 0.5em;
 }
+#servicecontent li a{
+  /*color: #027583; 8b8b8b d33d2e*/
+  color: #CC3A2A;
+}
 /**** MAIN DOWN ****/
 /* SCHEDULE BUTTON */
 #schedulecontainerser{
@@ -1108,7 +1117,7 @@ hr{
   text-decoration: none;
 }
 #servicecontent a:hover{
-  color: #942A1F;
+  color: #6458e9;
 }
 #servicecontent li{
   margin-left:-0.75em;
@@ -1387,6 +1396,11 @@ hr{
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+.howtolist li{
+  font-family: ubuntu, sans-serif;
+  padding-bottom: 0.5em;
+  color: #CC3A2A;
+}
 
 
 /* CONTACT PAGE CSS*/
@@ -1517,6 +1531,11 @@ iframe{
   margin-top:2em;
   margin-bottom: -1em;
 }
+@media screen and (min-width:1000px){
+  #schedulecontainercon{
+    border-radius: 10px;
+  }
+}
 #schedulecontainercon h2{
   text-align: center;
   margin-top:1em;
@@ -1564,6 +1583,11 @@ iframe{
   max-width: 1000px;
   margin: 0 auto;
   margin-top: 2em;
+}
+@media screen and (min-width:1000px){
+  .formcon{
+    border-radius: 10px;
+  }
 }
 .formtitle{
   text-align: center;
