@@ -1162,6 +1162,9 @@ hr{
   max-width:1000px;
   margin: 0 auto;
 }
+#radiatorcontent li{
+  padding-bottom: 0.5em;
+}
 /* SCHEDULE BUTTON */
 #schedulecontainerrad{
   background-color: #E6E7E8;
@@ -1640,3 +1643,49 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:#942A1F; }
+
+
+/**** BATTERY PAGE ****/
+/**** Taking most CSS from Radiator ****/
+.battlist{
+  font-family: ubuntu, sans-serif;
+  font-weight: 400;
+}
+.battlist li{
+  padding-bottom:0.5em;
+}
+
+
+/**** COUPON PAGE ****/
+/**** MAIN DOWN ****/
+#maincoup{
+  width:90%;
+  max-width:1000px;
+  margin: 0 auto;
+}
+.couponimg{
+  max-height: 450px;
+}
+
+.buttoncoup{
+	background-color: #03A0B4;
+	font-size: 1.2em;
+	padding: 0.5em 1em;
+	display: inline-block;
+	margin: 0.5em 0.5em 0.5em 0.5em;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+  box-shadow: -4px 4px 4px #3c3c3c;
+	transition: .3s background-color ease-in-out;
+}
+.buttoncoup:hover{
+  background-color: #014a53;
+  color: white;
+}
+.textcoup{
+  transition: .3s color ease-in-out;
+  font-size:1.25em;
+  font-family: ubuntu, san-serif;
+  font-weight: 700;
+}
