@@ -77,11 +77,11 @@ p{
 .logo {
   width: 120px;
 }
-/* LOGO */
+/* LOGO
 .logo {
   width: 200px;
   padding-top:0.5em;
-}
+}*/
 /* Nav */
 .nav {
   display: grid;
