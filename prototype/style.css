@@ -1387,3 +1387,232 @@ hr{
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+
+/* CONTACT PAGE CSS*/
+/* OPEN IMG */
+#openimgcontact{
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  max-height:500px;
+  display: block;
+	margin: 0 auto;
+  margin-bottom:-.25em;
+  margin-top:1em;
+}
+.bannerimgcontact{
+  width: 100%;
+}
+#banneroverlaycontact{
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.overlaytextcontact{
+  color: white;
+  font-size: 0.75em;
+  font-style: italic;
+  line-height: 1.2em;
+  width: 50%;
+  padding: 0.5em 0.75em;
+}
+.openbannercontact{
+  margin: auto;
+}
+@media screen and (min-width:350px) {
+  .overlaytextcontact{
+    font-size:0.9em;
+    line-height: 1.4em;
+  }
+}
+@media screen and (min-width:450px) {
+  .overlaytextcontact{
+    font-size:1em;
+    width: 45%;
+  }
+}
+@media screen and (min-width:700px) {
+  .overlaytextcontact{
+    font-size:1.5em;
+    line-height: 1.4em;
+    width: 40%;
+  }
+}
+@media screen and (min-width:1000px){
+  .overlaytextcontact{
+    font-size: 2em;
+  }
+}
+
+/**** MAIN DOWN ****/
+.introcon{
+  margin-bottom: -0.25em;
+}
+iframe{
+  width: 100%;
+  height: 400px;
+}
+.contactp{
+  width: 90%;
+  max-width:1000px;
+  margin: 0 auto;
+}
+.contactcon{
+  width: 90%;
+  max-width:1000px;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.mainmaplink a{
+  text-decoration: none;
+  color: black;
+}
+.mainmaplink a:hover{
+  color: #03A0B4;
+}
+@media screen and (min-width:550px){
+  .contactcon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 1em;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (min-width:700px){
+  .contactp{
+    width:90%;
+    max-width:1000px;
+  }
+}
+@media screen and (min-width:810px){
+  .contactcon{
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width:1000px){
+  .contactp{
+    font-size: 1.3em;
+  }
+}
+
+/* SCHEDULE BUTTON */
+#schedulecontainercon{
+  background-color: #E6E7E8;
+  color: #942B20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top:2em;
+  margin-bottom: -1em;
+}
+#schedulecontainercon h2{
+  text-align: center;
+  margin-top:1em;
+  margin-bottom:-0.25em;
+  padding: 0 0.5em;
+}
+#schedulecontainercon p{
+  text-align: center;
+  margin-bottom:-0.25em;
+  padding: 0 2em;
+  color: black;
+}
+#schedulecontainercon h3{
+  margin-bottom:-0.5em;
+  color: #03A0B4;
+}
+.buttoncon{
+	background-color: #03A0B4;
+	font-size: 1.2em;
+	padding: 0.5em 1em;
+	display: inline-block;
+	margin: 1.25em 1.5em 1.25em 1.5em;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+  box-shadow: -4px 4px 4px #3c3c3c;
+	transition: .3s background-color ease-in-out;
+}
+.buttoncon:hover{
+  background-color: #014a53;
+  color: white;
+}
+.textcon{
+  transition: .3s color ease-in-out;
+  font-size:1.25em;
+  font-family: ubuntu, san-serif;
+  font-weight: 700;
+}
+
+/**** Form Form ****/
+.formcon{
+  background-color: #E6E7E8;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+.formtitle{
+  text-align: center;
+  font-size: 2.2em;
+}
+form {
+  max-width:550px;
+  margin:50px auto;
+  width: 90%;
+}
+
+.feedback-input {
+  color:black;
+  font-family: ubuntu, Helvetica, Arial, sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #027583;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid white; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#942A1F; }
