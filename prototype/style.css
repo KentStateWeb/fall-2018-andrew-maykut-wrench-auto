@@ -291,22 +291,22 @@ p{
 /**** Add media queries for margin-top on footer to increase as the height on a tablet increses and in portrait orientation ****/
 @media screen and (min-height: 1100px) and (orientation: portrait){
   .footcoupon{
-    margin-top:15em;
+    margin-top:18em;
   }
 }
 @media screen and (min-height: 1200px) and (orientation: portrait){
   .footcoupon{
-    margin-top:20em;
+    margin-top:23em;
   }
 }
 @media screen and (min-height: 1300px) and (orientation: portrait){
   .footcoupon{
-    margin-top:24em;
+    margin-top:27em;
   }
 }
 @media screen and (min-height: 1400px) and (orientation: portrait){
   .footcoupon{
-    margin-top:29em;
+    margin-top:32em;
   }
 }
 
