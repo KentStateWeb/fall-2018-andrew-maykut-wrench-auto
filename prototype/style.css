@@ -279,6 +279,92 @@ p{
 		margin:0 auto;
   }
 }
+
+
+/* COUPON FOOTER */
+/**** FOOTER ****/
+.footcoupon{
+  background-color: #2e2e2f;
+  padding: 1em 0em;
+  margin-top: 5em;
+}
+/**** Add media queries for margin-top on footer to increase as the height on a tablet increses and in portrait orientation ****/
+@media screen and (min-height: 1100px) and (orientation: portrait){
+  .footcoupon{
+    margin-top:15em;
+  }
+}
+@media screen and (min-height: 1200px) and (orientation: portrait){
+  .footcoupon{
+    margin-top:20em;
+  }
+}
+@media screen and (min-height: 1300px) and (orientation: portrait){
+  .footcoupon{
+    margin-top:24em;
+  }
+}
+@media screen and (min-height: 1400px) and (orientation: portrait){
+  .footcoupon{
+    margin-top:29em;
+  }
+}
+
+.containercoupon{
+  width:90%;
+  margin:0 auto;
+  text-align:center;
+}
+.directcoupon{
+  max-width:380px;
+  margin:0 auto;
+  padding-top: 0.75em;
+}
+
+.footcoupon h3{
+  color: #03a0b4;
+  margin-top: 1.5em;
+  margin-bottom: -0.5em;
+}
+.footcoupon p{
+  color: #e6e7e8;
+}
+.leftcolcoupon a{
+  color: white;
+  font-family: ubuntu, san-serif;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  margin-top:1.5em;
+}
+.leftcolcoupon a:hover{
+  color: #942A1F;
+}
+.copyrightcoupon{
+  color: #03A0B4;
+}
+
+@media screen and (min-width: 850px) {
+  .footgridcoupon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 2em;
+  }
+  .containercoupon{
+    max-width: 900px;
+    text-align: left;
+  }
+  .midcolcoupon{
+    padding-left:3em;
+  }
+}
+@media screen and (min-width: 1050px){
+  .containercoupon{
+    max-width: 1000px;
+    width: 100%;
+    margin:0 auto;
+  }
+}
 /* END FOOTER */
 
 
