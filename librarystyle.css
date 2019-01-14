@@ -116,15 +116,24 @@ p{
   font-family: eurostile, sans-serif;
   font-weight: 700;
   letter-spacing: 0.11em;
+	margin-bottom: -1em;
+}
+@media screen and (min-width: 500px){
+	.nav{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-content: space-between;
+		grid-column-gap: 1em;
+	}
 }
 .nav li a{
     display: block;
     text-align: center;
     text-decoration: none;
 }
-.nav li {
+/*.nav li {
   margin:0.5em 0 0 0;
-}
+}*/
 
 .nav a{
   color: #942A1F;
@@ -132,12 +141,10 @@ p{
   padding: 0.85em 0.85em 0.85em 0.85em;
 }
 .nav a:hover{
-  background-color: #03A0B4;
-  color: white;
+  color: #03A0B4;
 }
 .active {
-  background-color: #A9A9A9;
-  color: white !important;
+  color: #03A0B4 !important;
 }
 /* Phone and Address */
 .phoneadd{
@@ -150,12 +157,13 @@ p{
 	grid-column-gap: 1em;
   text-align:center;
   margin-top:2em;
+  /*margin-left: -2.5em;*/
   padding-bottom: 0.5em;
   padding-top: 0.5em;
-  border-top:1px solid #942B20;
+  border-top: 1px solid #942B20;
 }
 .phoneadd li{
-  margin-left:-3.5em;
+  /*margin-left:-3.5em;*/
   padding:0.5em 0.75em;
 }
 .phoneadd a{
@@ -182,6 +190,8 @@ p{
 	  justify-content: flex-end;
     margin-left: 0em;
     font-size:1.2em;
+		margin-bottom: 0em;
+		padding-top: 0.75em;
   }
   .nav a{
     color: #942A1F;
@@ -193,15 +203,14 @@ p{
     display:flex;
     justify-content: flex-end;
     margin-left: 0em;
-    margin-top:0em;
+    margin-top: 0em;
   }
-  .phoneadd li{
-    margin-left: 0em;
-    margin-right:1em;
+  .phoneaddele{
+    margin-right:1.25em;
   }
   /* Header */
   #header {
-    /*padding:1em; Turning Padding off made the whole HEADER section height shorter. Did that to show more of the Schedule Now container. I also made the banner img height max at 400px. */
+    /*padding:1em; /* Turning Padding off made the whole HEADER section height shorter. Did that to show more of the Schedule Now container. I also made the banner img height max at 400px. */
     background-color: #E6E7E8;
   }
   #header-content {
@@ -214,7 +223,7 @@ p{
     float:left;
   }
   #header-nav  {
-    margin-bottom:1em;
+    /*margin-bottom: 1em;*/
     text-align: right;
     display: block;
     padding-top:1em;
@@ -223,7 +232,6 @@ p{
   #header-nav-toggle {
     display:none;
   }
-
   /* LOGO */
   .logo {
     width: 200px;
@@ -236,33 +244,39 @@ p{
     display:inline-block;
   }
 }
+
 /* END MEDIA Q 850px */
 
 /**** FOOTER ****/
 #foot{
   background-color: #2e2e2f;
   padding: 1em 0em;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 .container{
   width:90%;
-  max-width: 1000px;
+  /*max-width: 1000px;*/
   margin:0 auto;
+	text-align: center;
 }
-.footgrid{
-  margin-left: -2.5em;
+.direct{
+	max-width: 380px;
+	margin:0 auto;
+	padding-top: 0.75em;
 }
 
 #foot h3{
-  color: #03a0b4;
-  margin-top: 1.5em;
+  color: #03A0B4;
   margin-bottom: -0.5em;
+  letter-spacing: 0.07em;
 }
 #foot p{
   color: #e6e7e8;
 }
 .leftcol a{
   color: white;
+  font-family: ubuntu, san-serif;
+  font-weight: 400;
   text-decoration: none;
   display: inline-block;
   margin-top:1.5em;
@@ -276,20 +290,19 @@ p{
 
 @media screen and (min-width: 850px) {
   .footgrid{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 2em;
   }
-  .leftcol{
-    width: 34%;
-    padding-right:1em;
-  }
-  .midcol{
-    width: 33%;
-  }
-  .rightcol{
-    width: 33%;
-  }
+  .container{
+		max-width: 900px;
+		text-align: left;
+	}
+	.midcol{
+		padding-left: 3em;
+	}
 }
+
 
 .ase125{
   height: 125px;
