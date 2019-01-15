@@ -1,0 +1,116 @@
+* {
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+}
+body{
+  margin: 0;
+}
+
+/* HEADER CONTENT */
+header{
+  background-color: #e6e7e8;
+}
+.headcontent{
+  text-align: center;
+  padding: 1em;
+}
+.logo {
+  width: 200px;
+  margin-top: 1em;
+}
+
+
+/* FOOTER CONTENT */
+footer{
+  text-align: center;
+}
+
+
+/* BODY CONTENT */
+.aboutproject{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 900px;
+  font-family: ubuntu, san-serif;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+.aboutproject p{
+  max-width: 700px;
+  margin-bottom: 3em;
+}
+.team11main p{
+  font-family: ubuntu, san-serif;
+  font-weight: 400;
+}
+.funct{
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+}
+.team11main{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 3em;
+}
+@media screen and (min-width: 600px){
+  .team11main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    text-align: left;
+  }
+}
+h1{
+  font-family: eurostile, sans-serif;
+  font-weight: 800;
+  /*font-size: 2.75em; /* bigger: 2.75em */
+  margin-top: 0;
+  margin-bottom: -0.25em;
+  text-transform: uppercase;
+}
+h2{
+  font-family: eurostile, sans-serif;
+  font-weight: 700;
+  /*font-size: 2em; /* bigger: 2em */
+  color: #942A1F;
+  margin-top: 0.75em;
+  margin-bottom: 0.25em;
+}
+h3{
+  font-size: 1.5em;
+  margin-bottom: -0.25em;
+}
+h4{
+  font-family: ubuntu, san-serif;
+  font-weight: 400;
+}
+
+
+/* LINKs */
+.team11main a{
+  color: white;
+  font-family: ubuntu, san-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* LINK BUTTONS */
+.button11{
+	background-color: #03A0B4;
+	font-size: 1.2em;
+	padding: 0.5em 1em;
+	display: inline-block;
+	margin: 0em 0em 0.25em 0em;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+  /*box-shadow: -4px 4px 4px #3c3c3c;*/
+	transition: .3s background-color ease-in-out;
+}
+.button11:hover{
+  background-color: #014a53; /* #6458e9 */
+}
